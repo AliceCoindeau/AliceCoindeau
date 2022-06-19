@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohmyfood-AC-21-05-22</title>
+    <title>Ohmyfood-AC-02-06-22</title>
     <!-- Stylesheets -->
     <link type="text/css" rel="stylesheet" href="Stylemyfood.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -15,11 +15,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap">
-</head>
+<!--fav icon-->
+<link rel="shortcut icon" type="image/png" href="images/logo/ohmyfoodfav.png"/>
+    </head>
 
 <body>
+    <!-- Loading page-->
+    <div class="spin-wrapper">
+        <div class="spinner">
+        </div>
+    </div>
+<!--Header-->  
     <header class="Header">
-        <a href="homepage.html">
+        <a href="ohmyfood-home.html">
             <h1>ohmyfood</h1>
         </a>
         <div class="Location">
@@ -29,32 +37,35 @@
             <input type="text" placeholder="Paris, Belleville" class="Location-bar">
         </div>
     </header>
-    <main>
-        <section class="Presentation">
-            <div class="Presentation-title">
-                <h2>Réservez le Menu qui vous convient</h2>
-            </div>
-            <P class="Presentation-subtitle">Découvrez des restaurants d'exception, sélectionés par nos sélectionés</P>
-            <div class=button> <a href="#restaurants" class="btn-text">Explorer nos restaurants </a> </div>
-        </section>
-        <section class="Choices">
-            <div class="Choices">
+ 
+<main>
+    <section class="Presentation">
+        <div class="Presentation-title">
+               <h2>Réservez le Menu qui vous convient</h2>  
+        </div>
+        <div class="Presentation-subtitle">
+               <p>Découvrez des restaurants d'exception, sélectionés par nos sélectionés</p>
+        </div>
+        <div class=button>
+            <a href="ohmyfood-home.html" class="btn-text">Explorer nos restaurants</a>
+        </div>
+    </section>
+   
+    <section class="Choices">
                 <div class="Title">
                     <h2>Fonctionnement</h2>
                 </div>
+            <div class="Choices-content">
                 <div class="Choice">
                     <div class="Choice-ref">1</div>
                     <div class="Choice-icon"><i class="fas fa-mobile-alt "></i></div>
-
                     <div class="Choice-Content">Choisissez un restaurant</div>
                 </div>
-
                 <div class="Choice">
                     <div class="Choice-ref">2</div>
                     <div class="Choice-icon"><i class="fas fa-list-ul"></i></div>
                     <div class="Choice-Content">Composez votre menu</div>
                 </div>
-
                 <div class="Choice">
                     <div class="Choice-ref">3</div>
                     <div class="Choice-icon"><i class="fas fa-store "></i></div>
@@ -62,36 +73,32 @@
                 </div>
             </div>
         </section>
-
         <section class="Restaurants">
             <div class="Title">
                 <h2>Restaurants</h2>
             </div>
-            <div class="Restaurant">
-                <a href="Lapalettedugout.html">
-                    <div class="Badge">Nouveau</div>
-                    <img class="Restaurant-img" src="images/restaurants/La-palette-du-gout.jpg"
-                        alt="La palette du goût">
-                    <div class="Restaurant-content">
-                        <div class="Restautant-text">
-                            <h3>La palette du goût</h3>
-                            <p>Menilmontant</p>
-                        </div>
-                        <div class="Like">
-                            <div class="Like-empty">
-                                <i class="far fa-heart fa-lg"></i>
-                            </div>
-                            <div class="Like-full">
-                                <i class="fas fa-heart fa-lg"></i>
-                            </div>
-                        </div>
+<div class="Restaurants-choices">
+        <a href="Lapalettedugout.html" class="Restaurant"> 
+        <div class="Badge">Nouveau</div>
+        <img class="Restaurant-img" src="images/restaurants/La-palette-du-gout.jpg" alt="La palette du gout">
+                <div class="Restaurant-content">
+                    <div class="Restautant-text">
+                        <h3>La palette du goût</h3>
+                        <p>Menilmontant</p>
                     </div>
-                </a>
-            </div>
-            <div class="Restaurant">
-                <a href="Lanoteenchantee.html">
-                    <div class="Badge">Nouveau</div>
-                    <img class="Restaurant-img" src="images/restaurants/La-note-enchantee.jpg" alt="La note enchantgée">
+                    <div class="Like">
+                     <div class="Like-empty">
+                        <i class="far fa-heart fa-lg"></i>
+                    </div>
+                    <div class="Like-full">
+                    <i class="fas fa-heart fa-2x"></i>
+                     </div>
+                    </div>
+                </div>
+        </a>
+            <a href="Lanoteenchantee.html" class="Restaurant" >
+            <div class="Badge">Nouveau</div>
+            <img class="Restaurant-img" src="images/restaurants/La-note-enchantee.jpg" alt="La note enchantee">
                     <div class="Restaurant-content">
                         <div class="Restautant-text">
                             <h3>La note enchantée</h3>
@@ -102,15 +109,13 @@
                                 <i class="far fa-heart fa-lg"></i>
                             </div>
                             <div class="Like-full">
-                                <i class="fas fa-heart fa-lg"></i>
+                                <i class="fas fa-heart fa-2x"></i>
                             </div>
                         </div>
                     </div>
-                </a>
-            </div>
-            <div class="Restaurant">
-                <a href="Alafrancaise.html">
-                    <img class="Restaurant-img" src="images/restaurants/A-la-francaise.jpg" alt="À la française">
+        </a>
+        <a href="Alafrancaise.html" class="Restaurant">
+        <img class="Restaurant-img" src="images/restaurants/A-la-francaise.jpg" alt="A la francaise">
                     <div class="Restaurant-content">
                         <div class="Restautant-text">
                             <h3>À la française</h3>
@@ -121,42 +126,39 @@
                                 <i class="far fa-heart fa-lg"></i>
                             </div>
                             <div class="Like-full">
-                                <i class="fas fa-heart fa-lg"></i>
+                                <i class="fas fa-heart fa-2x"></i>
                             </div>
                         </div>
                     </div>
-                </a>
-            </div>
-
-            <div class="Restaurant">
-                <a href="Ledelicedessens.html">
-                    <img class="Restaurant-img" src="images/restaurants/Le-delice-des-sens.jpg"
-                        alt="Le délice des sens">
-                    <div class="Restaurant-content">
-                        <div class="Restautant-text">
-                            <h3>Le délice des sens</h3>
-                            <p>Folie-Méricourt</p>
+        </a>
+        <a href="Ledelicedessens.html" class="Restaurant">
+        <img class="Restaurant-img" src="images/restaurants/Le-delice-des-sens.jpg" alt="Le delice des sens">
+            <div class="Restaurant-content">
+                <div class="Restautant-text">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                </div>
+                    <div class="Like">
+                        <div class="Like-empty">
+                            <i class="far fa-heart fa-lg"></i>
                         </div>
-                        <div class="Like">
-                            <div class="Like-empty">
-                                <i class="far fa-heart fa-lg"></i>
-                            </div>
-                            <div class="Like-full">
-                                <i class="fas fa-heart fa-lg"></i>
-                            </div>
+                        <div class="Like-full">
+                            <i class="fas fa-heart fa-2x"></i>
                         </div>
                     </div>
-                </a>
             </div>
+            </a>
+        </div>
         </section>
     </main>
     <footer class="Footer">
-        <p>Ohmyfood</p>
-        <ul class="Footer-link">
-            <li class="Footer-icon"> <i class='fas fa-utensils'></i> Proposer un restaurant</li>
-            <li class="Footer-icon"><i class='fas fa-hands-helping'></i> Devenir Partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
-        </ul>
-    </footer>
+        <p>Ohmyfood</p> 
+         <ul class="Footer-links">
+             <li class="Footer-icon"> <a class="Footer-elmt" href="#"><i class='fas fa-utensils'></i> Proposer un restaurant </a></li> 
+             <li class="Footer-icon"> <a class="Footer-elmt" href="#"><i class='fas fa-hands-helping'></i> Devenir Partenaire</a> </li>
+             <li> <a class="Footer-elmt" href="#"> Mentions légales</a></li>
+             <li> <a class="Footer-elmt" href="#"> Contact </a></li> 
+         </ul>
+     </footer> 
+
 </body>
